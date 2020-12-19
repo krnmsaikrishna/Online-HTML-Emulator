@@ -1,0 +1,77 @@
+<link href="w3.css" rel="stylesheet"></link>
+<script src="script.js">
+</script>
+<link href="style.css" rel="stylesheet">
+</link>
+<body onload="emulator()">
+<form>
+<div class="w3-maintitle">Online HTML Emulator</div>
+<div class="w3-labels">
+<div class="w3-label1">HTML Code</div>
+<div class="w3-label2">BODY Code</div>
+<div class="w3-label3">CSS Code</div>
+<div class="w3-label4">JS Code</div>
+</div>
+<textarea id="head" class="w3-input w3-headcode"  placeholder="Type or paste head content here...">
+<title>Example Domain</title>
+<meta charset="utf-8" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</textarea>
+</div>
+<textarea id="body" class="w3-input w3-bodycode" placeholder="Type or paste body content here...">
+<div>
+<h1>Example Domain</h1>
+<p>This domain is established to be used for illustrative examples in documents. You may use this domain in examples without prior coordination or asking for permission.</p>
+<p>
+<a href="http://www.iana.org/domains/example">More information...</a>
+</p>
+</div>
+</textarea>
+
+<textarea id="css" class="w3-input w3-csscode" placeholder="Type or paste css content here...">
+body {
+background-color:#f0f0f2;
+margin:0;
+padding:0;
+font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+div {
+width:600px;
+margin:5em auto;
+padding:50px;
+background-color:#fff;
+border-radius:1em;
+}
+a:link,a:visited {
+color:#38488f;
+text-decoration:none;
+}
+@media (max-width:700px) 
+{
+body {
+background-color:#fff;
+}
+div {
+width:auto;
+margin:0 auto;
+border-radius:0;
+padding:1em;
+}
+}
+</textarea>
+
+<textarea id="js" class="w3-input w3-jscode" placeholder="Type or paste javascript content here...">
+<!--
+alert("This is an Example for Full Webpage Code");
+//-->
+</textarea>
+
+</form>
+<iframe id="livedemo" srcdoc="" class="w3-livedemo"></iframe>
+<center>
+<input type="button" class="w3-btn w3-green" onclick="emulator()" value="Run Now" />
+<input type="button" class="w3-btn w3-red" onclick="demulator()" value="Reset Now" />
+</center>
+<br/><br/>
+
